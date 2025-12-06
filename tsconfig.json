@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    // Added to handle CDN imports
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types", "./types"]
+  },
+  // Adding type acquisition to help with CDN modules
+  "typeAcquisition": {
+    "include": [
+      "react",
+      "react-dom",
+      "framer-motion",
+      "ethers",
+      "lucide-react"
+    ]
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "files": ["./types/global.d.ts"]
+}

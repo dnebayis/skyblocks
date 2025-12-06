@@ -1,0 +1,5 @@
+{
+  "name": "ArcBlocks",
+  "description": "An infinite, community-built 3D Voxel Tower on the Arc Network. Stack floors, leave your message, and build the sky. NPM INSTALL: npm install ethers framer-motion lucide-react canvas-confetti clsx tailwind-merge",
+  "requestFramePermissions": []
+}
