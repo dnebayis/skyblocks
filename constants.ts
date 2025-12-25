@@ -1,6 +1,6 @@
 import { ThemeConfig, ThemeId } from "./types";
 
-export const CONTRACT_ADDRESS = "0x92c49128C4a8F379CA22777e1342a2e335444d27";
+export const CONTRACT_ADDRESS = "0x92c49128C4a8F379CA22777e1342a2e335444d27" as const;
 export const ARC_CHAIN_ID = 5042002;
 
 export const ARC_NETWORK_CONFIG = {
@@ -18,9 +18,9 @@ export const ARC_NETWORK_CONFIG = {
 export const CONTRACT_ABI = [
   {
     "inputs": [
-      {"internalType": "string","name": "_message","type": "string"},
-      {"internalType": "string","name": "_twitter","type": "string"},
-      {"internalType": "uint256","name": "_themeId","type": "uint256"}
+      { "internalType": "string", "name": "_message", "type": "string" },
+      { "internalType": "string", "name": "_twitter", "type": "string" },
+      { "internalType": "uint256", "name": "_themeId", "type": "uint256" }
     ],
     "name": "buildFloor",
     "outputs": [],
@@ -33,11 +33,11 @@ export const CONTRACT_ABI = [
     "outputs": [
       {
         "components": [
-          {"internalType": "address","name": "builder","type": "address"},
-          {"internalType": "string","name": "message","type": "string"},
-          {"internalType": "string","name": "twitterHandle","type": "string"},
-          {"internalType": "uint256","name": "themeId","type": "uint256"},
-          {"internalType": "uint256","name": "timestamp","type": "uint256"}
+          { "internalType": "address", "name": "builder", "type": "address" },
+          { "internalType": "string", "name": "message", "type": "string" },
+          { "internalType": "string", "name": "twitterHandle", "type": "string" },
+          { "internalType": "uint256", "name": "themeId", "type": "uint256" },
+          { "internalType": "uint256", "name": "timestamp", "type": "uint256" }
         ],
         "internalType": "struct SkyBlocks.Floor[]",
         "name": "",
@@ -50,11 +50,11 @@ export const CONTRACT_ABI = [
   {
     "inputs": [],
     "name": "cost",
-    "outputs": [{"internalType": "uint256","name": "","type": "uint256"}],
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   }
-];
+] as const;
 
 export const THEMES: { [key: number]: ThemeConfig } = {
   [ThemeId.GRASS]: {

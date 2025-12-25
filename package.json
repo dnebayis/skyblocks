@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.10",
+    "@tanstack/react-query": "^5.90.12",
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",
     "ethers": "^6.16.0",
@@ -16,7 +18,9 @@
     "lucide-react": "^0.556.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
-    "tailwind-merge": "^3.4.0"
+    "tailwind-merge": "^3.4.0",
+    "viem": "^2.43.3",
+    "wagmi": "^2.19.5"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
