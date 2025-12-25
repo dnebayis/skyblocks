@@ -68,7 +68,7 @@ SkyBlocks is a Web3 monument-building dApp where users can stack floors on an in
 
 - **Frontend**: React 19 + TypeScript
 - **Build Tool**: Vite 6
-- **Web3**: Ethers.js v6
+- **Web3**: RainbowKit + Wagmi + Viem
 - **Styling**: Tailwind CSS (via inline classes)
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
@@ -81,11 +81,10 @@ skyblocks/
 │   ├── BuildModal.tsx   # Floor building modal
 │   ├── Button.tsx       # Reusable button component
 │   └── FloorBlock.tsx   # Individual floor display
-├── services/
-│   └── web3Service.ts   # Blockchain interaction logic
 ├── types/
 │   └── global.d.ts      # TypeScript global declarations
 ├── App.tsx              # Main application component
+├── config.ts            # RainbowKit & Wagmi configuration
 ├── constants.ts         # Contract addresses and configs
 ├── types.ts             # TypeScript type definitions
 ├── index.tsx            # Application entry point
@@ -149,4 +148,4 @@ MIT License - feel free to use this project for learning or building your own dA
 
 ---
 
-**Built with ❤️ for the Web3 community**
+**Built with ❤️ by [0xshawtyy](https://x.com/0xshawtyy) for the Web3 community**
